@@ -1,0 +1,300 @@
+$date
+	Sat Oct  4 15:43:29 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module alu_tb $end
+$var wire 4 ! result_tb [3:0] $end
+$var wire 1 " carry_tb $end
+$var parameter 32 # ALU_BIT_WIDTH $end
+$var parameter 32 $ OPERATION_CODE_WIDTH $end
+$var reg 4 % a_tb [3:0] $end
+$var reg 4 & b_tb [3:0] $end
+$var reg 3 ' oc_tb [2:0] $end
+$scope module dut $end
+$var wire 4 ( a_i [3:0] $end
+$var wire 4 ) and_result [3:0] $end
+$var wire 4 * b_i [3:0] $end
+$var wire 3 + oc_i [2:0] $end
+$var wire 4 , or_result [3:0] $end
+$var wire 4 - xor_result [3:0] $end
+$var wire 4 . sum [3:0] $end
+$var wire 1 " carry_o $end
+$var wire 4 / b_add_sub [3:0] $end
+$var wire 1 0 add_sub $end
+$var parameter 32 1 ALU_BIT_WIDTH $end
+$var parameter 32 2 OPERATION_CODE_WIDTH $end
+$var reg 4 3 result_o [3:0] $end
+$scope module cra $end
+$var wire 4 4 a_i [3:0] $end
+$var wire 4 5 b_i [3:0] $end
+$var wire 1 0 carry_i $end
+$var wire 4 6 sum_o [3:0] $end
+$var wire 1 " carry_o $end
+$var wire 5 7 carry [4:0] $end
+$var parameter 32 8 CRA_BIT_NUMB $end
+$scope begin adder_stage[0] $end
+$var parameter 2 9 i $end
+$scope module fa $end
+$var wire 1 : a_i $end
+$var wire 1 ; b_i $end
+$var wire 1 < carry_i $end
+$var wire 1 = carry_o $end
+$var wire 1 > sum_o $end
+$var wire 1 ? sum_ab $end
+$var wire 1 @ carry_ha_1 $end
+$var wire 1 A carry_ha_0 $end
+$scope module ha0 $end
+$var wire 1 : a_i $end
+$var wire 1 ; b_i $end
+$var wire 1 A carry_o $end
+$var wire 1 ? sum_o $end
+$upscope $end
+$scope module ha1 $end
+$var wire 1 ? a_i $end
+$var wire 1 < b_i $end
+$var wire 1 @ carry_o $end
+$var wire 1 > sum_o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin adder_stage[1] $end
+$var parameter 2 B i $end
+$scope module fa $end
+$var wire 1 C a_i $end
+$var wire 1 D b_i $end
+$var wire 1 E carry_i $end
+$var wire 1 F carry_o $end
+$var wire 1 G sum_o $end
+$var wire 1 H sum_ab $end
+$var wire 1 I carry_ha_1 $end
+$var wire 1 J carry_ha_0 $end
+$scope module ha0 $end
+$var wire 1 C a_i $end
+$var wire 1 D b_i $end
+$var wire 1 J carry_o $end
+$var wire 1 H sum_o $end
+$upscope $end
+$scope module ha1 $end
+$var wire 1 H a_i $end
+$var wire 1 E b_i $end
+$var wire 1 I carry_o $end
+$var wire 1 G sum_o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin adder_stage[2] $end
+$var parameter 3 K i $end
+$scope module fa $end
+$var wire 1 L a_i $end
+$var wire 1 M b_i $end
+$var wire 1 N carry_i $end
+$var wire 1 O carry_o $end
+$var wire 1 P sum_o $end
+$var wire 1 Q sum_ab $end
+$var wire 1 R carry_ha_1 $end
+$var wire 1 S carry_ha_0 $end
+$scope module ha0 $end
+$var wire 1 L a_i $end
+$var wire 1 M b_i $end
+$var wire 1 S carry_o $end
+$var wire 1 Q sum_o $end
+$upscope $end
+$scope module ha1 $end
+$var wire 1 Q a_i $end
+$var wire 1 N b_i $end
+$var wire 1 R carry_o $end
+$var wire 1 P sum_o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin adder_stage[3] $end
+$var parameter 3 T i $end
+$scope module fa $end
+$var wire 1 U a_i $end
+$var wire 1 V b_i $end
+$var wire 1 W carry_i $end
+$var wire 1 X carry_o $end
+$var wire 1 Y sum_o $end
+$var wire 1 Z sum_ab $end
+$var wire 1 [ carry_ha_1 $end
+$var wire 1 \ carry_ha_0 $end
+$scope module ha0 $end
+$var wire 1 U a_i $end
+$var wire 1 V b_i $end
+$var wire 1 \ carry_o $end
+$var wire 1 Z sum_o $end
+$upscope $end
+$scope module ha1 $end
+$var wire 1 Z a_i $end
+$var wire 1 W b_i $end
+$var wire 1 [ carry_o $end
+$var wire 1 Y sum_o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 T
+b10 K
+b1 B
+b0 9
+b100 8
+b11 2
+b100 1
+b11 $
+b100 #
+$end
+#0
+$dumpvars
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0J
+0I
+1H
+1G
+0F
+0E
+1D
+0C
+0A
+0@
+1?
+1>
+0=
+0<
+0;
+1:
+b0 7
+b11 6
+b10 5
+b1 4
+b11 3
+00
+b10 /
+b11 .
+b11 -
+b11 ,
+b100 +
+b10 *
+b0 )
+b1 (
+b100 '
+b10 &
+b1 %
+0"
+b11 !
+$end
+#15000
+b101 '
+b101 +
+#30000
+1E
+b1111 !
+b1111 3
+b1111 .
+b1111 6
+1=
+1G
+1P
+1Y
+0?
+1A
+0H
+1Q
+1Z
+1<
+1;
+0D
+1M
+1V
+b11 7
+b1101 /
+b1101 5
+10
+b111 '
+b111 +
+#45000
+b110 '
+b110 +
+#60000
+0N
+0E
+b11 !
+b11 3
+0F
+b11 .
+b11 6
+0=
+1G
+0I
+0P
+0Y
+1?
+0A
+1H
+0Q
+0Z
+0<
+0;
+1D
+0M
+0V
+b0 7
+b10 /
+b10 5
+00
+b1 '
+b1 +
+#75000
+1E
+b0 !
+b0 3
+b1111 .
+b1111 6
+1=
+1G
+1P
+1Y
+0?
+1A
+0H
+1Q
+1Z
+1<
+1;
+0D
+1M
+1V
+b11 7
+b1101 /
+b1101 5
+10
+b10 '
+b10 +
+#90000
+b11 '
+b11 +
+#105000
